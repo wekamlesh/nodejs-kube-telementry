@@ -1,5 +1,7 @@
 const express = require("express");
 const client = require("prom-client");
+require('./tracer'); // Must be the first line
+
 
 // --- App and Environment Setup ---
 const app = express();
